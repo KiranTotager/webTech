@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Html Basics</title>
+</head>
+
+<body>
+
+	<h1>Introduction to Html</h1>
+	<hr>
+
+	<h2>What is HTML?</h2>
+	<p>
+		HTML (HyperText Markup Language)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:-&nbsp;&nbsp;&nbsp;&nbsp;
+		is the standard markup language used to create and structure pages on the web. It describes the content and
+		layout of a webpage using a system of tags and attributes, allowing browsers to display text, images, links, and
+		other elements correctly.
+	</p>
+	<hr>
+
+	<h3>Why you use HTML?</h3>
+	<p>We use HTML because it is the fundamental language for:</p>
+	<ul>
+		<li>Structuring web content – defining headings, paragraphs, lists, tables, and forms.</li>
+		<li>Embedding media – adding images, audio, and videos to web pages.</li>
+		<li>Creating hyperlinks – linking pages and resources together to form the World Wide Web.</li>
+		<li>Ensuring browser compatibility – it’s supported by all web browsers, making it the universal standard for
+			web content.</li>
+	</ul>
+	<hr>
+
+	<h4>What are the features of HTML?</h4>
+	<ul>
+		<li>All instructions should pass through tags.</li>
+		<li>HTML tags are predefined.</li>
+		<li>Not case sensitive.</li>
+	</ul>
+	<hr>
+
+	<h3>Basic HTML Text Formatting Tags</h3>
+	<ul>
+		<li><b>&lt;b&gt;</b> – This tag makes the text bold. It’s used just for styling and doesn’t give any extra
+			importance to the content.
+			<ul>
+				<li>Example: <b>This is bold</b> → This is bold</li>
+			</ul>
+		</li>
+
+		<li><b>&lt;strong&gt;</b> – This also makes the text bold, but it adds importance or seriousness to the content.
+			<ul>
+				<li>Example: <strong>Important!</strong> → Important!</li>
+			</ul>
+		</li>
+
+		<li><b>&lt;i&gt;</b> – This tag makes the text italic. Like &lt;b&gt;, it is just for styling.
+			<ul>
+				<li>Example: <i>This is italic</i> → This is italic</li>
+			</ul>
+		</li>
+
+		<li><b>&lt;em&gt;</b> – This makes the text italic, but it also adds emphasis or stress on the word.
+			<ul>
+				<li>Example: <em>Don't do that!</em> → Don't do that!</li>
+			</ul>
+		</li>
+
+		<li><b>&lt;u&gt;</b> – This tag underlines the text.
+			<ul>
+				<li>Example: <u>This is underlined</u> → This is underlined</li>
+			</ul>
+		</li>
+
+
+
+		<li><b>&lt;small&gt;</b> – This tag makes the text appear smaller than the normal size.
+			<ul>
+				<li>Example: <small>This is small text</small> → This is small text</li>
+			</ul>
+		</li>
+
+		<li><b>&lt;del&gt;</b> – This is used to show deleted text with a line through it (strikethrough).
+			<ul>
+				<li>Example: <del>Old Price</del> → Old Price</li>
+			</ul>
+		</li>
+
+		<li><b>&lt;strike&gt;</b> – This tag was used to show text with a strikethrough (a line through it). It's now
+			replaced by &lt;del&gt; in HTML5.
+			<ul>
+				<li>Example: <strike>Old content</strike> → Old content</li>
+			</ul>
+		</li>
+
+
+		<li><b>&lt;sub&gt;</b> – This tag is for subscript text (appears below the line), often used in scientific
+			formulas.
+			<ul>
+				<li>Example: H<sub>2</sub>O → H₂O</li>
+			</ul>
+		</li>
+
+		<li><b>&lt;sup&gt;</b> – This tag is for superscript text (appears above the line), like exponents.
+			<ul>
+				<li>Example: x<sup>2</sup> → x²</li>
+			</ul>
+		</li>
+	</ul>
+	<h2>HTML Media and Link Tags</h2>
+	<ul>
+		<li><b>&lt;img&gt;</b> – Used to embed an image.
+			<ul>
+				<li><b>Common attributes:</b>
+					<ul>
+						<li><code>src</code> – Source of the image</li>
+						<li><code>alt</code> – Alternate text if image fails</li>
+						<li><code>width</code> – Width of the image</li>
+						<li><code>height</code> – Height of the image</li>
+						<li><code>title</code> – Tooltip on hover</li>
+					</ul>
+				</li>
+				<li>Example: <code>&lt;img src="image.jpg" alt="Description"&gt;</code></li>
+			</ul>
+		</li>
+
+		<li><b>&lt;a&gt; &lt;/a&gt;</b> – Used to create a hyperlink.
+			<ul>
+				<li><b>Common attributes:</b>
+					<ul>
+						<li><code>href</code> – URL of the link</li>
+						<li><code>target</code> – Where to open the link (<code>_blank</code>, <code>_self</code>)</li>
+						<li><code>title</code> – Tooltip on hover</li>
+						<li><code>download</code> – Download the linked resource</li>
+					</ul>
+				</li>
+				<li>Example: <code>&lt;a href="https://example.com"&gt;Visit Site&lt;/a&gt;</code></li>
+			</ul>
+		</li>
+	</ul>
+
+	<h3>HTML List Tags</h3>
+	<ul>
+		<li> <b>Ordered list(&lt;ol&gt; &lt;/ol&gt; ) </b>
+			<ul>
+				<li><b>Common attributes:</b>
+					<ul>
+						<li><code>type</code> – Type of numbering (e.g., <code>1, A, a, I, i</code>)</li>
+						<li><code>start</code> – Starting number (e.g., <code>start="5"</code>)</li>
+						<li><code>reversed</code> – Reverse the numbering (e.g., <code>reversed</code>)</li>
+					</ul>
+				</li>
+				<li>Example: <br>
+					<code>
+                    &lt;ol type="A" start="3"&gt;<br>
+                    &nbsp;&nbsp;&lt;li&gt;First item&lt;/li&gt;<br>
+                    &nbsp;&nbsp;&lt;li&gt;Second item&lt;/li&gt;<br>
+                    &lt;/ol&gt;
+                </code>
+				</li>
+			</ul>
+		</li>
+		<hr>
+
+		<li><b> Unordered list (&lt;ul&gt; &lt;/ul&gt;)</b>
+			<ul>
+				<li><b>Common attributes:</b> *(No major attributes in modern HTML)*</li>
+				<li>Note: Earlier <code>type</code> attribute was used (like <code>circle, square</code>), but it's
+					deprecated. Use CSS instead.</li>
+				<li>Example: <br>
+					<code>
+                    &lt;ul&gt;<br>
+                    &nbsp;&nbsp;&lt;li&gt;Item 1&lt;/li&gt;<br>
+                    &nbsp;&nbsp;&lt;li&gt;Item 2&lt;/li&gt;<br>
+                    &lt;/ul&gt;
+                </code>
+				</li>
+			</ul>
+		</li>
+		<hr>
+		<li><b>&lt;li&gt; &lt;/li&gt;</b> – List item inside <code>&lt;ul&gt;</code> or <code>&lt;ol&gt;</code>.
+			<ul>
+				<li><b>Common attributes:</b> *(Usually styled using CSS)*</li>
+			</ul>
+		</li>
+		<hr>
+		<li>
+			<b>description list (&lt;dl&gt; &lt;/dl&gt;)</b> – This tag is used to define a <b>Description List</b>. It
+			contains terms and their descriptions using the <b>&lt;dt&gt;</b> (term) and <b>&lt;dd&gt;</b> (description)
+			tags.<br>
+			<b>Example:</b>
+			<br>
+			&lt;dl&gt;<br>
+			&nbsp;&nbsp;&lt;dt&gt;HTML&lt;/dt&gt;<br>
+			&nbsp;&nbsp;&lt;dd&gt;HyperText Markup Language&lt;/dd&gt;<br>
+			&nbsp;&nbsp;&lt;dt&gt;CSS&lt;/dt&gt;<br>
+			&nbsp;&nbsp;&lt;dd&gt;Cascading Style Sheets&lt;/dd&gt;<br>
+			&lt;/dl&gt;
+		</li>
+		<b>Table tag (&lt;table&gt; &lt;/table&gt;)</b> – This tag is used to define an <b>HTML Table</b>. It arranges
+		data in rows and columns using other related tags like <b>&lt;tr&gt;</b> (table row), <b>&lt;th&gt;</b> (table
+		heading), and <b>&lt;td&gt;</b> (table data).<br>
+		<b>Example:</b><br>
+		&lt;table border="1"&gt;<br>
+		&nbsp;&nbsp;&lt;tr&gt;<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Name&lt;/th&gt;<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Age&lt;/th&gt;<br>
+		&nbsp;&nbsp;&lt;/tr&gt;<br>
+		&nbsp;&nbsp;&lt;tr&gt;<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Kiran&lt;/td&gt;<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;22&lt;/td&gt;<br>
+		&nbsp;&nbsp;&lt;/tr&gt;<br>
+		&nbsp;&nbsp;&lt;tr&gt;<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;hemanth&lt;/td&gt;<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;23&lt;/td&gt;<br>
+		&nbsp;&nbsp;&lt;/tr&gt;<br>
+		&lt;/table&gt;
+
+
+		<li><b>Semantic Tags:</b> Tags that clearly describe their meaning to both the browser and developer.
+			<ul>
+				<li><b>&lt;header&gt; &lt;/header&gt;</b> – Page or section header</li>
+				<li><b>&lt;nav&gt; &lt;/nav&gt;</b> – Navigation links</li>
+				<li><b>&lt;main&gt; &lt;/main&gt;</b> – Main content of the page</li>
+				<li><b>&lt;section&gt; &lt;/section&gt;</b> – A section in a document</li>
+				<li><b>&lt;footer&gt; &lt;/footer&gt;</b> – Page or section footer</li>
+			</ul>
+		</li>
+
+
+		<li><b>Block-Level Elements:</b> These elements start on a new line and take up full width.
+			<ul>
+				<li><b>&lt;div&gt; &lt;/div&gt;</b> – Generic block container</li>
+				<li><b>&lt;p&gt; &lt;/p&gt;</b> – Paragraph</li>
+				<li><b>&lt;h1&gt; to &lt;h6&gt;</b> – Headings</li>
+				<li><b>&lt;ul&gt;, &lt;ol&gt;</b> – Unordered/Ordered lists</li>
+				<li><b>&lt;table&gt;</b> – Table</li>
+			</ul>
+		</li>
+
+
+		<li><b>Inline Elements:</b> These elements do not start on a new line and take up only as much width as needed.
+			<ul>
+				<li><b>&lt;span&gt; &lt;/span&gt;</b> – Generic inline container</li>
+				<li><b>&lt;a&gt; &lt;/a&gt;</b> – Anchor (hyperlink)</li>
+				<li><b>&lt;strong&gt; &lt;/strong&gt;</b> – Important text (bold)</li>
+				<li><b>&lt;em&gt; &lt;/em&gt;</b> – Emphasized text (italic)</li>
+				<li><b>&lt;img&gt;</b> – Image</li>
+			</ul>
+		</li>
+
+		<li><b>&lt;audio&gt; Tag:</b> Used to embed sound/audio content.
+			<ul>
+				<li><b>Attributes:</b> src, controls, autoplay, loop</li>
+				<li><b>Example:</b> &lt;audio controls src="sound.mp3"&gt;&lt;/audio&gt;</li>
+			</ul>
+		</li>
+
+
+		<li><b>&lt;video&gt; Tag:</b> Used to embed video content.
+			<ul>
+				<li><b>Attributes:</b> src, controls, autoplay, loop, poster</li>
+				<li><b>Example:</b> &lt;video controls src="video.mp4"&gt;&lt;/video&gt;</li>
+			</ul>
+		</li>
+		<li><b>&lt;form&gt; Tag:</b> Used to create an HTML form for user input.
+
+		</li>
+
+		<li><b>&lt;input&gt; Tag:</b> Represents an input field where the user can enter data.
+			<ul>
+				<li><b>Attributes:</b> type, name, value, placeholder, size, maxlength, required</li>
+				<li><b>Example:</b> &lt;input type="text" name="username" placeholder="Enter name"&gt;</li>
+			</ul>
+		</li>
+
+		<li><b>&lt;label&gt; Tag:</b> Defines a label for an &lt;input&gt; element.
+			<ul>
+				<li><b>Attribute:</b> for (must match the input's id)</li>
+				<li><b>Example:</b> &lt;label for="email"&gt;Email:&lt;/label&gt;</li>
+			</ul>
+		</li>
+
+		<li><b>type (Attribute):</b> Specifies the type of &lt;input&gt;. Determines what kind of data the input
+			accepts.
+			<ul>
+				<li><b>Examples:</b> text, password, email, number, checkbox, radio, submit, file</li>
+				<li><b>Example:</b> &lt;input type="email" name="email"&gt;</li>
+			</ul>
+		</li>
+
+		<li><b>for (Attribute):</b> Used in the &lt;label&gt; tag to bind the label to an input element.
+			<ul>
+				<li><b>Example:</b> &lt;label for="user"&gt;Username&lt;/label&gt; with &lt;input id="user"&gt;</li>
+			</ul>
+		</li>
+
+		<li><b>&lt;meta&gt; Tag:</b> Provides metadata about the HTML document (not visible to users).
+			<ul>
+				<li><b>Common Uses:</b> charset, viewport, description, keywords, author</li>
+				<li><b>Example:</b> &lt;meta charset="UTF-8"&gt;</li>
+			</ul>
+		</li>
+
+		<li><b>size (Attribute):</b> Specifies the **visible width** of an input field (in characters).
+			<ul>
+				<li><b>Example:</b> &lt;input type="text" size="30"&gt;</li>
+			</ul>
+		</li>
+
+		<li><b>maxlength (Attribute):</b> Limits the **maximum number of characters** allowed in an input field.
+			<ul>
+				<li><b>Example:</b> &lt;input type="text" maxlength="10"&gt;</li>
+			</ul>
+		</li>
+
+		<li><b>required (Attribute):</b> Specifies that the input **must be filled out** before submitting the form.
+			<ul>
+				<li><b>Example:</b> &lt;input type="email" required&gt;</li>
+			</ul>
+		</li>
+
+
+	</ul>
+
+</body>
+
+</html>
