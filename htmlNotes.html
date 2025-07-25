@@ -318,6 +318,155 @@
 				<li><b>Example:</b> &lt;input type="email" required&gt;</li>
 			</ul>
 		</li>
+		<li><b>Radio Button:</b> Allows the user to select <b>one option</b> from a set.
+			<ul>
+				<li><b>Example:</b> &lt;input type="radio" name="gender" value="male"&gt; Male</li>
+			</ul>
+		</li>
+
+		<li><b>Checkbox:</b> Allows the user to select <b>multiple options</b> from a set.
+			<ul>
+				<li><b>Example:</b> &lt;input type="checkbox" name="hobby" value="music"&gt; Music</li>
+			</ul>
+		</li>
+
+		<li><b>File Field:</b> Allows the user to <b>upload a file</b> from their device.
+			<ul>
+				<li><b>Example:</b> &lt;input type="file" name="resume"&gt;</li>
+			</ul>
+		</li>
+
+		<li><b>Range:</b> Allows the user to select a <b>numeric value within a range</b> using a slider.
+			<ul>
+				<li><b>Example:</b> &lt;input type="range" min="0" max="100"&gt;</li>
+			</ul>
+		</li>
+
+		<li><b>Drop-down List (Select Box):</b> Allows the user to <b>select one option</b> from a list.
+			<ul>
+				<li><b>Example:</b>
+					&lt;select name="country"&gt;<br>
+					&nbsp;&nbsp;&lt;option value="india"&gt;India&lt;/option&gt;<br>
+					&nbsp;&nbsp;&lt;option value="usa"&gt;USA&lt;/option&gt;<br>
+					&lt;/select&gt;
+				</li>
+			</ul>
+		</li>
+
+		<li><b>Multi-line Text (Textarea):</b> Allows the user to <b>enter long text or multiple lines</b>.
+			<ul>
+				<li><b>Example:</b> &lt;textarea name="comments"&gt;Enter your comments here...&lt;/textarea&gt;</li>
+			</ul>
+		</li>
+
+		<li><b>Button:</b> A clickable <b>button used to submit, reset, or perform custom actions</b>.
+			<ul>
+				<li><b>Example:</b> &lt;button type="submit"&gt;Submit&lt;/button&gt;</li>
+			</ul>
+		</li>
+
+		<li><b>Fieldset and Legend:</b> Used to <b>group related form elements</b> and give a <b>caption</b>.
+			<ul>
+				<li><b>Example:</b><br>
+					&lt;fieldset&gt;<br>
+					&nbsp;&nbsp;&lt;legend&gt;Personal Info&lt;/legend&gt;<br>
+					&nbsp;&nbsp;&lt;input type="text" name="name"&gt;<br>
+					&lt;/fieldset&gt;
+				</li>
+			</ul>
+		</li>
+		<li><b>iframe (Inline Frame):</b> Used to <b>embed another HTML page or external content</b> within the current
+			page.
+			<ul>
+				<li><b>Example:</b><br>
+					&lt;iframe src="https://www.example.com" width="300" height="200"&gt;&lt;/iframe&gt;
+				</li>
+			</ul>
+		</li>
+
+		<li><b>pattern (Attribute):</b> Used in &lt;input&gt; to <b>define a regular expression</b> that the input's
+			value must match.
+			<ul>
+				<li><b>Example:</b> Only allow 5-digit numbers:<br>
+					&lt;input type="text" pattern="[0-9]{5}" title="Enter 5 digits"&gt;
+				</li>
+				<li><b>Note:</b> The <code>title</code> attribute provides a message when the pattern doesn't match.
+				</li>
+			</ul>
+		</li>
+		<center><h2>CSS(Cascading style Sheets)</h2></center>
+		<li><b>CSS (Cascading Style Sheets):</b> Used to style and design HTML elements (like colors, layouts, fonts,
+			etc.).
+			<ul>
+				<li><b>Purpose:</b> Enhances the visual appearance and layout of webpages.</li>
+			</ul>
+		</li>
+
+		<li><b>Types of CSS Integration:</b> CSS can be added to HTML in 3 main ways:
+			<ul>
+				<li><b>1. Inline CSS:</b> CSS written inside an element using the <code>style</code> attribute.
+					<ul>
+						<li><b>Example:</b><br>
+							&lt;p style="color: red;"&gt;This is red text.&lt;/p&gt;
+						</li>
+					</ul>
+				</li>
+
+				<li><b>2. Internal CSS:</b> CSS written inside a &lt;style&gt; tag in the &lt;head&gt; section.
+					<ul>
+						<li><b>Example:</b><br>
+							&lt;style&gt;<br>
+							&nbsp;&nbsp;p { color: green; }<br>
+							&lt;/style&gt;
+						</li>
+					</ul>
+				</li>
+
+				<li><b>3. External CSS:</b> CSS written in a separate .css file and linked to the HTML using the
+					<code>&lt;link&gt;</code> tag.
+					<ul>
+						<li><b>Example:</b><br>
+							&lt;link rel="stylesheet" href="styles.css"&gt;
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		<hr>
+		
+		<li><b>CSS Selectors:</b> Used to select the HTML elements you want to style.
+			<ul>
+				<li><b>1. Universal Selector (*)</b> – Selects all elements.
+					<ul>
+						<li><b>Example:</b> * { margin: 0; padding: 0; }</li>
+					</ul>
+				</li>
+
+				<li><b>2. Element Selector</b> – Selects elements by tag name.
+					<ul>
+						<li><b>Example:</b> p { color: blue; }</li>
+					</ul>
+				</li>
+
+				<li><b>3. ID Selector (#)</b> – Selects an element by ID.
+					<ul>
+						<li><b>Example:</b> #main { font-size: 18px; }</li>
+					</ul>
+				</li>
+
+				<li><b>4. Class Selector (.)</b> – Selects elements by class.
+					<ul>
+						<li><b>Example:</b> .box { border: 1px solid black; }</li>
+					</ul>
+				</li>
+
+				<li><b>5. Grouping Selector</b> – Applies the same style to multiple elements.
+					<ul>
+						<li><b>Example:</b> h1, h2, h3 { color: gray; }</li>
+					</ul>
+				</li>
+			</ul>
+		</li>
 
 
 	</ul>

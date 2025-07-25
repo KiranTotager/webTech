@@ -1,9 +1,31 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>my resume</title>
+        <title>just practice</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     </head>
     <body>
-        <center></center>
+        <iframe src="https://www.linkedin.com/feed/" frameborder="0" scrolling="no" width="1000"></iframe>
+        <form >
+            <label for="name">name</label>
+            <input type="text" name="name" id="name"><br><br>
+            <label for="phone">phone:</label>
+            <input type="text" id="phone"><br><br>
+            <label for="pswd">password</label>
+            <input type="text" id="pswd" pattern="[0-9A-Za-z@/#!-_+]{6,}"><span class="material-symbols-outlined" onclick="togglePassword()" id="visibility">
+visibility
+</span>
+            <input type="submit" name="submit" id="submit">
+        </form>      
+        <script>
+            function togglePassword(){
+                let ps=document.getElementById("pswd");
+                if(ps.type==="password"){
+                    ps.type="text";
+                }else{
+                    ps.type="password";
+                }
+            }
+        </script>
     </body>
 </html>
