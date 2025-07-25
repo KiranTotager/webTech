@@ -394,7 +394,9 @@
 				</li>
 			</ul>
 		</li>
-		<center><h2>CSS(Cascading style Sheets)</h2></center>
+		<center>
+			<h2>CSS(Cascading style Sheets)</h2>
+		</center>
 		<li><b>CSS (Cascading Style Sheets):</b> Used to style and design HTML elements (like colors, layouts, fonts,
 			etc.).
 			<ul>
@@ -433,7 +435,7 @@
 			</ul>
 		</li>
 		<hr>
-		
+
 		<li><b>CSS Selectors:</b> Used to select the HTML elements you want to style.
 			<ul>
 				<li><b>1. Universal Selector (*)</b> – Selects all elements.
@@ -465,6 +467,42 @@
 						<li><b>Example:</b> h1, h2, h3 { color: gray; }</li>
 					</ul>
 				</li>
+				<li><b>6. Pseudo-class Selectors</b> – Apply styles to elements based on their state or position in the
+					document.
+					<ul>
+						<li><b>Definition:</b> Pseudo-classes are keywords added to selectors that define a special
+							state of the selected elements.</li>
+						<li><b>Examples:</b>
+							<ul>
+								<li><code>:hover</code> – When the mouse pointer is over an element<br><b>Example:</b>
+									<code>a:hover { color: red; }</code></li>
+								<li><code>:focus</code> – When an element (like input) is focused<br><b>Example:</b>
+									<code>input:focus { border: 2px solid blue; }</code></li>
+								<li><code>:first-child</code> – Selects the first child of a parent<br><b>Example:</b>
+									<code>p:first-child { font-weight: bold; }</code></li>
+								<li><code>:last-child</code> – Selects the last child<br><b>Example:</b>
+									<code>li:last-child { color: green; }</code></li>
+								<li><code>:nth-child(n)</code> – Selects the nth child<br><b>Example:</b>
+									<code>li:nth-child(2) { background: yellow; }</code></li>
+							</ul>
+						</li>
+						<li><b>Link-related Pseudo-classes:</b>
+							<ul>
+								<li><code>:link</code> – Normal, unvisited link<br><b>Example:</b>
+									<code>a:link { color: blue; }</code></li>
+								<li><code>:visited</code> – Link that has been visited<br><b>Example:</b>
+									<code>a:visited { color: purple; }</code></li>
+								<li><code>:hover</code> – When the mouse is over the link<br><b>Example:</b>
+									<code>a:hover { color: red; }</code></li>
+								<li><code>:active</code> – When the link is being clicked<br><b>Example:</b>
+									<code>a:active { color: green; }</code></li>
+							</ul>
+						</li>
+						<li><b>Tip:</b> Always follow the order for links –
+							<code>:link → :visited → :hover → :active</code> (L-V-H-A).</li>
+					</ul>
+				</li>
+
 			</ul>
 		</li>
 
