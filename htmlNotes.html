@@ -502,8 +502,98 @@
 							<code>:link → :visited → :hover → :active</code> (L-V-H-A).</li>
 					</ul>
 				</li>
-
 			</ul>
+			<hr>
+			<center><h2>CSS Properties</h2></center>
+			<ul>
+  <li><b>Color and Background Properties:</b>
+    <ul>
+      <li><b><code>color</code> – Sets the color of text</b>
+        <br><b>Ways to specify values:</b>
+        <ul>
+          <li>Named Colors → <code>color: red;</code></li>
+          <li>Hex Codes → <code>color: #ff0000;</code></li>
+          <li>RGB → <code>color: rgb(255, 0, 0);</code></li>
+          <li>RGBA (with opacity) → <code>color: rgba(255, 0, 0, 0.5);</code></li>
+          <li>HSL → <code>color: hsl(0, 100%, 50%);</code></li>
+          <li>HSLA → <code>color: hsla(0, 100%, 50%, 0.5);</code></li>
+        </ul>
+      </li>
+
+      <li><b><code>background</code> – Shorthand for background styling</b>
+        <br><b>Properties we can include:</b>
+        <ul>
+          <li>Color → <code>background-color: yellow;</code></li>
+          <li>Image → <code>background-image: url("image.jpg");</code></li>
+          <li>Repeat → <code>background-repeat: no-repeat;</code></li>
+          <li>Position → <code>background-position: center;</code></li>
+          <li>Size → <code>background-size: cover;</code></li>
+          <li>Attachment → <code>background-attachment: fixed;</code></li>
+        </ul>
+        <b>Example:</b>
+        <br><code>background: url("bg.jpg") no-repeat center/cover fixed;</code>
+      </li>
+    </ul>
+  </li>
+
+  <li><b>CSS Box Model:</b>
+    <ul>
+      <li><b>Content:</b> Actual content like text or image.</li>
+      <li><b>Padding:</b> Space between content and border.</li>
+      <li><b>Border:</b> Surrounds the padding and content.</li>
+      <li><b>Margin:</b> Space outside the border (separates from other elements).</li>
+    </ul>
+  </li>
+
+  <li><b>Border Properties:</b>
+    <ul>
+      <li><code>border-width</code> → <code>border-width: 2px;</code></li>
+      <li><code>border-style</code> → <code>border-style: solid;</code> (dashed, dotted, etc.)</li>
+      <li><code>border-color</code> → <code>border-color: blue;</code></li>
+      <li><b>Shorthand:</b> <code>border: 2px solid blue;</code></li>
+    </ul>
+  </li>
+
+  <li><b>Outline:</b>
+    <ul>
+      <li><b>Definition:</b> An <b>outline</b> is a line drawn outside the element’s border. It is used mainly for highlighting elements (like focus or error states).</li>
+      <li>Unlike borders, outlines do <b>not take up space</b> and do <b>not affect layout</b>.</li>
+      <li>It cannot be applied to individual sides (no outline-left or outline-top).</li>
+    </ul>
+  </li>
+
+  <li><b>Outline Properties:</b>
+    <ul>
+      <li><code>outline-width</code> → <code>outline-width: 2px;</code></li>
+      <li><code>outline-style</code> → <code>outline-style: dotted;</code></li>
+      <li><code>outline-color</code> → <code>outline-color: red;</code></li>
+      <li><b>Shorthand:</b> <code>outline: 2px dotted red;</code></li>
+    </ul>
+  </li>
+
+  <li><b>Outline Offset:</b>
+    <ul>
+      <li><code>outline-offset</code> – Moves the outline away from the border without affecting layout.</li>
+      <li><b>Example:</b> <code>outline-offset: 5px;</code> → outline appears 5px outside the border.</li>
+    </ul>
+  </li>
+
+  <li><b>Comparison: Margin vs Outline-Offset</b>
+    <ul>
+      <li><b><code>margin</code></b> adds space around the whole element, and it affects layout.</li>
+      <li><b><code>outline-offset</code></b> creates space between the border and the outline only, without affecting layout.</li>
+      <li><b>They are not interchangeable.</b></li>
+    </ul>
+    <b>Example:</b><br>
+    <code>
+      .btn1 { border: 2px solid black; outline: 3px solid red; outline-offset: 5px; }<br>
+      .btn2 { border: 2px solid black; outline: 3px solid red; margin: 5px; }
+    </code>
+    <br><b>Explanation:</b> The outline in <code>.btn1</code> appears 5px away from the border.  
+    In <code>.btn2</code>, the element moves, but the outline still sticks to the border.
+  </li>
+</ul>
+
 		</li>
 
 
