@@ -475,126 +475,182 @@
 						<li><b>Examples:</b>
 							<ul>
 								<li><code>:hover</code> – When the mouse pointer is over an element<br><b>Example:</b>
-									<code>a:hover { color: red; }</code></li>
+									<code>a:hover { color: red; }</code>
+								</li>
 								<li><code>:focus</code> – When an element (like input) is focused<br><b>Example:</b>
-									<code>input:focus { border: 2px solid blue; }</code></li>
+									<code>input:focus { border: 2px solid blue; }</code>
+								</li>
 								<li><code>:first-child</code> – Selects the first child of a parent<br><b>Example:</b>
-									<code>p:first-child { font-weight: bold; }</code></li>
+									<code>p:first-child { font-weight: bold; }</code>
+								</li>
 								<li><code>:last-child</code> – Selects the last child<br><b>Example:</b>
-									<code>li:last-child { color: green; }</code></li>
+									<code>li:last-child { color: green; }</code>
+								</li>
 								<li><code>:nth-child(n)</code> – Selects the nth child<br><b>Example:</b>
-									<code>li:nth-child(2) { background: yellow; }</code></li>
+									<code>li:nth-child(2) { background: yellow; }</code>
+								</li>
 							</ul>
 						</li>
 						<li><b>Link-related Pseudo-classes:</b>
 							<ul>
 								<li><code>:link</code> – Normal, unvisited link<br><b>Example:</b>
-									<code>a:link { color: blue; }</code></li>
+									<code>a:link { color: blue; }</code>
+								</li>
 								<li><code>:visited</code> – Link that has been visited<br><b>Example:</b>
-									<code>a:visited { color: purple; }</code></li>
+									<code>a:visited { color: purple; }</code>
+								</li>
 								<li><code>:hover</code> – When the mouse is over the link<br><b>Example:</b>
-									<code>a:hover { color: red; }</code></li>
+									<code>a:hover { color: red; }</code>
+								</li>
 								<li><code>:active</code> – When the link is being clicked<br><b>Example:</b>
-									<code>a:active { color: green; }</code></li>
+									<code>a:active { color: green; }</code>
+								</li>
 							</ul>
 						</li>
 						<li><b>Tip:</b> Always follow the order for links –
-							<code>:link → :visited → :hover → :active</code> (L-V-H-A).</li>
+							<code>:link → :visited → :hover → :active</code> (L-V-H-A).
+						</li>
 					</ul>
 				</li>
 			</ul>
 			<hr>
-			<center><h2>CSS Properties</h2></center>
+			<center>
+				<h2>CSS Properties</h2>
+			</center>
 			<ul>
-  <li><b>Color and Background Properties:</b>
-    <ul>
-      <li><b><code>color</code> – Sets the color of text</b>
-        <br><b>Ways to specify values:</b>
-        <ul>
-          <li>Named Colors → <code>color: red;</code></li>
-          <li>Hex Codes → <code>color: #ff0000;</code></li>
-          <li>RGB → <code>color: rgb(255, 0, 0);</code></li>
-          <li>RGBA (with opacity) → <code>color: rgba(255, 0, 0, 0.5);</code></li>
-          <li>HSL → <code>color: hsl(0, 100%, 50%);</code></li>
-          <li>HSLA → <code>color: hsla(0, 100%, 50%, 0.5);</code></li>
-        </ul>
-      </li>
+				<li><b>Color and Background Properties:</b>
+					<ul>
+						<li><b><code>color</code> – Sets the color of text</b>
+							<br><b>Ways to specify values:</b>
+							<ul>
+								<li>Named Colors → <code>color: red;</code></li>
+								<li>Hex Codes → <code>color: #ff0000;</code></li>
+								<li>RGB → <code>color: rgb(255, 0, 0);</code></li>
+								<li>RGBA (with opacity) → <code>color: rgba(255, 0, 0, 0.5);</code></li>
+								<li>HSL → <code>color: hsl(0, 100%, 50%);</code></li>
+								<li>HSLA → <code>color: hsla(0, 100%, 50%, 0.5);</code></li>
+							</ul>
+						</li>
 
-      <li><b><code>background</code> – Shorthand for background styling</b>
-        <br><b>Properties we can include:</b>
-        <ul>
-          <li>Color → <code>background-color: yellow;</code></li>
-          <li>Image → <code>background-image: url("image.jpg");</code></li>
-          <li>Repeat → <code>background-repeat: no-repeat;</code></li>
-          <li>Position → <code>background-position: center;</code></li>
-          <li>Size → <code>background-size: cover;</code></li>
-          <li>Attachment → <code>background-attachment: fixed;</code></li>
-        </ul>
-        <b>Example:</b>
-        <br><code>background: url("bg.jpg") no-repeat center/cover fixed;</code>
-      </li>
-    </ul>
-  </li>
+						<li><b><code>background</code> – Shorthand for background styling</b>
+							<br><b>Properties we can include:</b>
+							<ul>
+								<li>Color → <code>background-color: yellow;</code></li>
+								<li>Image → <code>background-image: url("image.jpg");</code></li>
+								<li>Repeat → <code>background-repeat: no-repeat;</code></li>
+								<li>Position → <code>background-position: center;</code></li>
+								<li>Size → <code>background-size: cover;</code></li>
+								<li>Attachment → <code>background-attachment: fixed;</code></li>
+							</ul>
+							<b>Example:</b>
+							<br><code>background: url("bg.jpg") no-repeat center/cover fixed;</code>
+						</li>
+					</ul>
+				</li>
 
-  <li><b>CSS Box Model:</b>
-    <ul>
-      <li><b>Content:</b> Actual content like text or image.</li>
-      <li><b>Padding:</b> Space between content and border.</li>
-      <li><b>Border:</b> Surrounds the padding and content.</li>
-      <li><b>Margin:</b> Space outside the border (separates from other elements).</li>
-    </ul>
-  </li>
+				<li><b>CSS Box Model:</b>
+					<ul>
+						<li><b>Content:</b> Actual content like text or image.</li>
+						<li><b>Padding:</b> Space between content and border.</li>
+						<li><b>Border:</b> Surrounds the padding and content.</li>
+						<li><b>Margin:</b> Space outside the border (separates from other elements).</li>
+					</ul>
+				</li>
 
-  <li><b>Border Properties:</b>
-    <ul>
-      <li><code>border-width</code> → <code>border-width: 2px;</code></li>
-      <li><code>border-style</code> → <code>border-style: solid;</code> (dashed, dotted, etc.)</li>
-      <li><code>border-color</code> → <code>border-color: blue;</code></li>
-      <li><b>Shorthand:</b> <code>border: 2px solid blue;</code></li>
-    </ul>
-  </li>
+				<li><b>Border Properties:</b>
+					<ul>
+						<li><code>border-width</code> → <code>border-width: 2px;</code></li>
+						<li><code>border-style</code> → <code>border-style: solid;</code> (dashed, dotted, etc.)</li>
+						<li><code>border-color</code> → <code>border-color: blue;</code></li>
+						<li><b>Shorthand:</b> <code>border: 2px solid blue;</code></li>
+					</ul>
+				</li>
 
-  <li><b>Outline:</b>
-    <ul>
-      <li><b>Definition:</b> An <b>outline</b> is a line drawn outside the element’s border. It is used mainly for highlighting elements (like focus or error states).</li>
-      <li>Unlike borders, outlines do <b>not take up space</b> and do <b>not affect layout</b>.</li>
-      <li>It cannot be applied to individual sides (no outline-left or outline-top).</li>
-    </ul>
-  </li>
+				<li><b>Outline:</b>
+					<ul>
+						<li><b>Definition:</b> An <b>outline</b> is a line drawn outside the element’s border. It is
+							used mainly for highlighting elements (like focus or error states).</li>
+						<li>Unlike borders, outlines do <b>not take up space</b> and do <b>not affect layout</b>.</li>
+						<li>It cannot be applied to individual sides (no outline-left or outline-top).</li>
+					</ul>
+				</li>
 
-  <li><b>Outline Properties:</b>
-    <ul>
-      <li><code>outline-width</code> → <code>outline-width: 2px;</code></li>
-      <li><code>outline-style</code> → <code>outline-style: dotted;</code></li>
-      <li><code>outline-color</code> → <code>outline-color: red;</code></li>
-      <li><b>Shorthand:</b> <code>outline: 2px dotted red;</code></li>
-    </ul>
-  </li>
+				<li><b>Outline Properties:</b>
+					<ul>
+						<li><code>outline-width</code> → <code>outline-width: 2px;</code></li>
+						<li><code>outline-style</code> → <code>outline-style: dotted;</code></li>
+						<li><code>outline-color</code> → <code>outline-color: red;</code></li>
+						<li><b>Shorthand:</b> <code>outline: 2px dotted red;</code></li>
+					</ul>
+				</li>
 
-  <li><b>Outline Offset:</b>
-    <ul>
-      <li><code>outline-offset</code> – Moves the outline away from the border without affecting layout.</li>
-      <li><b>Example:</b> <code>outline-offset: 5px;</code> → outline appears 5px outside the border.</li>
-    </ul>
-  </li>
+				<li><b>Outline Offset:</b>
+					<ul>
+						<li><code>outline-offset</code> – Moves the outline away from the border without affecting
+							layout.</li>
+						<li><b>Example:</b> <code>outline-offset: 5px;</code> → outline appears 5px outside the border.
+						</li>
+					</ul>
+				</li>
 
-  <li><b>Comparison: Margin vs Outline-Offset</b>
-    <ul>
-      <li><b><code>margin</code></b> adds space around the whole element, and it affects layout.</li>
-      <li><b><code>outline-offset</code></b> creates space between the border and the outline only, without affecting layout.</li>
-      <li><b>They are not interchangeable.</b></li>
-    </ul>
-    <b>Example:</b><br>
-    <code>
+				<li><b>Comparison: Margin vs Outline-Offset</b>
+					<ul>
+						<li><b><code>margin</code></b> adds space around the whole element, and it affects layout.</li>
+						<li><b><code>outline-offset</code></b> creates space between the border and the outline only,
+							without affecting layout.</li>
+						<li><b>They are not interchangeable.</b></li>
+					</ul>
+					<b>Example:</b><br>
+					<code>
       .btn1 { border: 2px solid black; outline: 3px solid red; outline-offset: 5px; }<br>
       .btn2 { border: 2px solid black; outline: 3px solid red; margin: 5px; }
     </code>
-    <br><b>Explanation:</b> The outline in <code>.btn1</code> appears 5px away from the border.  
-    In <code>.btn2</code>, the element moves, but the outline still sticks to the border.
-  </li>
-</ul>
+					<br><b>Explanation:</b> The outline in <code>.btn1</code> appears 5px away from the border.
+					In <code>.btn2</code>, the element moves, but the outline still sticks to the border.
+				</li>
+			</ul>
 
 		</li>
+		<li><b>Padding Properties:</b>
+			<ul>
+				<li><code>padding-top</code> → <code>padding-top: 10px;</code></li>
+				<li><code>padding-right</code> → <code>padding-right: 15px;</code></li>
+				<li><code>padding-bottom</code> → <code>padding-bottom: 10px;</code></li>
+				<li><code>padding-left</code> → <code>padding-left: 15px;</code></li>
+				<li><b>Shorthand:</b> <code>padding: 10px 15px;</code>
+					<br><b>Format:</b> <code>padding: top right bottom left;</code> <br>
+					<b>Example:</b> <code>padding: 10px 20px 15px 5px;</code>
+				</li>
+			</ul>
+		</li>
+
+		<li><b>Margin Properties:</b>
+			<ul>
+				<li><code>margin-top</code> → <code>margin-top: 10px;</code></li>
+				<li><code>margin-right</code> → <code>margin-right: 15px;</code></li>
+				<li><code>margin-bottom</code> → <code>margin-bottom: 10px;</code></li>
+				<li><code>margin-left</code> → <code>margin-left: 15px;</code></li>
+				<li><b>Shorthand:</b> <code>margin: 10px 15px;</code>
+					<br><b>Format:</b> <code>margin: top right bottom left;</code> <br>
+					<b>Example:</b> <code>margin: 5px auto;</code> (for centering)
+				</li>
+				<li><b>Special Values:</b> <code>margin: auto;</code> (Used to center elements horizontally)</li>
+			</ul>
+		</li>
+
+		<li><b>Display Property:</b>
+			<ul>
+				<li><code>display: block;</code> – Element takes full width, starts on new line</li>
+				<li><code>display: inline;</code> – Element takes only the needed width, does not start on a new line
+				</li>
+				<li><code>display: inline-block;</code> – Like inline but can set width/height</li>
+				<li><code>display: none;</code> – Hides the element completely (removes from layout)</li>
+				<li><code>display: flex;</code> – Makes container a flexbox</li>
+				<li><code>display: grid;</code> – Enables grid layout</li>
+				<li><b>Example:</b> <code>display: flex;</code></li>
+			</ul>
+		</li>
+
 
 
 	</ul>
