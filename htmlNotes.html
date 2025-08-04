@@ -650,6 +650,123 @@
 				<li><b>Example:</b> <code>display: flex;</code></li>
 			</ul>
 		</li>
+		<li><b>Position Property:</b>
+			<ul>
+				<li><code>position: static;</code> – Default value. The element stays in the normal document flow.
+					<br><b>Note:</b> You can't use <code>top/right/bottom/left</code> with static.
+				</li>
+
+				<li><code>position: relative;</code> – Moves the element relative to its normal position (without
+					affecting others).
+					<br><b>Use Case:</b> Useful for fine adjustments or when you want to absolutely position children.
+					<br><b>Example:</b> <code>position: relative; top: 10px;</code>
+				</li>
+
+				<li><code>position: absolute;</code> – Positions the element relative to the nearest positioned ancestor
+					(anything except static).
+					<br><b>Important:</b> If no such ancestor exists, it's relative to the <code>&lt;html&gt;</code>
+					element (page).
+					<br><b>Use Case:</b> Tooltips, dropdowns, overlays.
+				</li>
+
+				<li><code>position: fixed;</code> – Positions the element relative to the browser window (viewport).
+					<br><b>Stays fixed</b> even when scrolling.
+					<br><b>Use Case:</b> Sticky headers, floating action buttons.
+				</li>
+
+				<li><code>position: sticky;</code> – Acts like relative until a scroll threshold is reached, then
+					becomes fixed.
+					<br><b>Use Case:</b> Section headers that stay on top until a new section begins.
+					<br><b>Example:</b> <code>position: sticky; top: 0;</code>
+				</li>
+
+				<li><b>Common Offsets:</b>
+					<ul>
+						<li><code>top</code>, <code>right</code>, <code>bottom</code>, <code>left</code> – Used to
+							position the element.</li>
+						<li><code>z-index</code> – Controls the stack order (which element appears on top).</li>
+					</ul>
+				</li>
+
+				<li><b>Example:</b>
+					<code>position: absolute; top: 50px; left: 100px; z-index: 2;</code>
+				</li>
+			</ul>
+		</li>
+
+		<li><b>Font Properties:</b>
+			<ul>
+				<li><code>font-family</code> – Specifies the typeface.
+					<br><b>Example:</b> <code>font-family: Arial, sans-serif;</code>
+				</li>
+
+				<li><code>font-size</code> – Controls the size of the text.
+					<br><b>Example:</b> <code>font-size: 16px;</code>
+				</li>
+
+				<li><code>font-weight</code> – Controls the thickness/boldness of text.
+					<br><b>Values:</b> <code>normal</code>, <code>bold</code>, <code>lighter</code>,
+					<code>bolder</code>, or 100–900
+					<br><b>Example:</b> <code>font-weight: 600;</code>
+				</li>
+
+				<li><code>font-style</code> – Sets the font to italic or oblique.
+					<br><b>Values:</b> <code>normal</code>, <code>italic</code>, <code>oblique</code>
+					<br><b>Example:</b> <code>font-style: italic;</code>
+				</li>
+
+				<li><code>font-variant</code> – Displays small-caps.
+					<br><b>Example:</b> <code>font-variant: small-caps;</code>
+				</li>
+
+				<li><code>font</code> – Shorthand for all font properties.
+					<br><b>Example:</b> <code>font: italic bold 16px/1.5 Arial, sans-serif;</code>
+				</li>
+			</ul>
+		</li>
+
+		<li><b>Text Properties:</b>
+			<ul>
+				<li><code>color</code> – Sets the color of the text.
+					<br><b>Example:</b> <code>color: blue;</code>
+				</li>
+
+				<li><code>text-align</code> – Aligns the text horizontally.
+					<br><b>Values:</b> <code>left</code>, <code>right</code>, <code>center</code>, <code>justify</code>
+					<br><b>Example:</b> <code>text-align: center;</code>
+				</li>
+
+				<li><code>text-decoration</code> – Adds decorative lines to text.
+					<br><b>Values:</b> <code>none</code>, <code>underline</code>, <code>overline</code>,
+					<code>line-through</code>
+					<br><b>Example:</b> <code>text-decoration: underline;</code>
+				</li>
+
+				<li><code>text-transform</code> – Controls letter casing.
+					<br><b>Values:</b> <code>none</code>, <code>uppercase</code>, <code>lowercase</code>,
+					<code>capitalize</code>
+					<br><b>Example:</b> <code>text-transform: uppercase;</code>
+				</li>
+
+				<li><code>letter-spacing</code> – Adjusts space between characters.
+					<br><b>Example:</b> <code>letter-spacing: 1.5px;</code>
+				</li>
+
+				<li><code>line-height</code> – Sets space between lines.
+					<br><b>Example:</b> <code>line-height: 1.6;</code>
+				</li>
+
+				<li><code>word-spacing</code> – Adjusts space between words.
+					<br><b>Example:</b> <code>word-spacing: 4px;</code>
+				</li>
+
+				<li><code>white-space</code> – Controls handling of white spaces and line breaks.
+					<br><b>Values:</b> <code>normal</code>, <code>nowrap</code>, <code>pre</code>,
+					<code>pre-line</code>, <code>pre-wrap</code>
+					<br><b>Example:</b> <code>white-space: nowrap;</code>
+				</li>
+			</ul>
+		</li>
 
 
 
